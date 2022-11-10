@@ -23,7 +23,7 @@ export default function Table({ data, flip }) {
           <td>{ d.location }</td>
           <td>{ d.uuid }</td>
           <td>{ d.balance }</td>
-          <td><button onClick={e => flip(d.id, d.balance)} className="border text-white py px-8 block rounded transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ">flip</button></td>
+          <td><button onClick={e => flip(d.id, d.balance)} className="border h-10 text-white py px-8 block rounded-md transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ">flip</button></td>
         </tr>
       ))}
       </tbody>
